@@ -1,0 +1,20 @@
+create table if not exists Employee(
+	  id UUID not null
+	, name varchar(100) not null
+	, birthday Date not null
+	, experience int not null
+	, Position_ID UUID not null
+);
+
+create table if not exists Position(
+	  id UUID not null
+	, name varchar(100) not null
+	, salary numeric not null
+	, Department_ID UUID not null
+);
+
+create table if not exists Department(
+	  id UUID not null
+	, name varchar(100) not null
+	, depHead varchar(100) not null
+)
